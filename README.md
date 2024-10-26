@@ -26,23 +26,7 @@ If you would like to use client rendered components you will need to utilize the
 The code for these apis can be found in the [app/api](./app/api/) directory.
 
 You can opt not to use the API and instead use server rendered components utilizing the data fetchers defined in [lib/data.ts](./lib/data.ts).
-
-### Database Setup
-
-The appliction expects a postgres database to store data. You will need to create a postgres database in vercel and populate the following env variables:
-
-```
-POSTGRES_URL=
-POSTGRES_PRISMA_URL=
-POSTGRES_URL_NON_POOLING=
-POSTGRES_USER=
-POSTGRES_HOST=
-POSTGRES_PASSWORD=
-POSTGRES_DATABASE=
-```
-
-Once the database is setup and the application can connect, you will need to [seed](https://en.wikipedia.org/wiki/Database_seeding) the database using the `GET /api/seed` endpoint. This will create necessary database tables and load starter data. See the code [here](./app/api/seed/route.ts).
-
+k
 Helper methods for interacting with the database are already implemented in [lib/data.ts](./lib/data.ts)
 
 ### Authentication
